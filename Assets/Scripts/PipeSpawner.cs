@@ -1,19 +1,17 @@
 ﻿using UnityEngine;
 
-namespace Assets
+namespace Assets.Scripts
 {
     public class PipeSpawner : MonoBehaviour
     {
         public float MaxTime = 1;
-        public GameObject Pipe;
+        public GameObject pipe;
         public float Height;
         private float _timer = 0;
 
         // Start is called before the first frame update
         private void Start()
         {
-            GameObject newPipe = Instantiate(Pipe);
-            newPipe.transform.position = transform.position + new Vector3(0, Random.Range(-Height, Height), 0);
         }
 
         // Update is called once per frame
@@ -21,8 +19,9 @@ namespace Assets
         {
             if (_timer > MaxTime)
             {
-                GameObject newPipe = Instantiate(Pipe);
+                GameObject newPipe = Instantiate(pipe);
                 newPipe.transform.position = transform.position + new Vector3(0, Random.Range(-Height, Height), 0);
+                Destroy(newPipe, 15);
                 _timer = 0;
             }
 

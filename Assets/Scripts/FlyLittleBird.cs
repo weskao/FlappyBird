@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UIElements;
 
-namespace Assets
+namespace Assets.Scripts
 {
     public class FlyLittleBird : MonoBehaviour
     {
