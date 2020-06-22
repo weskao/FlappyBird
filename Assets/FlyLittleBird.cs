@@ -1,12 +1,11 @@
-﻿using JetBrains.Annotations;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UIElements;
 
 namespace Assets
 {
     public class FlyLittleBird : MonoBehaviour
     {
-        public float velocity = 1.4f;
+        public float Velocity = 1;
         private Rigidbody2D _rb;
 
         // Start is called before the first frame update
@@ -20,7 +19,7 @@ namespace Assets
         {
             if (Input.GetMouseButtonDown((int)MouseButton.LeftMouse))
             {
-                _rb.velocity = Vector2.up * velocity;
+                _rb.velocity = Vector2.up * Velocity;
             }
         }
     }
