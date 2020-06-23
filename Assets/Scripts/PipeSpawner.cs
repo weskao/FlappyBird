@@ -21,7 +21,7 @@ namespace Assets.Scripts
             {
                 GameObject newPipe = Instantiate(pipe);
                 newPipe.transform.position = transform.position + new Vector3(0, Random.Range(-Height, Height), 0);
-                Destroy(newPipe, 15);
+                Destroy(newPipe, 7);
                 _timer = 0;
             }
 
