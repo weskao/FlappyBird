@@ -214,6 +214,7 @@ GameObject:
   - component: {fileID: 387567681}
   - component: {fileID: 387567680}
   - component: {fileID: 387567682}
+  - component: {fileID: 387567683}
   m_Layer: 0
   m_Name: Ground
   m_TagString: Untagged
@@ -266,7 +267,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 1.6894217, y: 0.5807699}
+  m_Size: {x: 3.428033, y: 0.561695}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -280,7 +281,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 387567679}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.016, y: -4.344, z: 0}
+  m_LocalPosition: {x: -2, y: -4.351, z: 0}
   m_LocalScale: {x: 3.7, y: 2.23792, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -304,7 +305,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1.68, y: 0.56}
-    newSize: {x: 1.6894217, y: 0.5807699}
+    newSize: {x: 3.428033, y: 0.561695}
     adaptiveTilingThreshold: 0.5
     drawMode: 2
     adaptiveTiling: 0
@@ -312,6 +313,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.68, y: 0.56}
   m_EdgeRadius: 0
+--- !u!95 &387567683
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 387567679}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4a0c643353a7c68489d09c4abec62464, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -581,7 +601,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxTime: 1
   pipe: {fileID: 202368990310946614, guid: a9fc348b3dd10ae4e9c58f01f7077dec, type: 3}
-  Height: 0
+  Height: 1
 --- !u!4 &1869670402
 Transform:
   m_ObjectHideFlags: 0
