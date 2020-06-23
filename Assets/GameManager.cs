@@ -1,18 +1,33 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class GameManager : MonoBehaviour
+namespace Assets
 {
-    // Start is called before the first frame update
-    void Start()
+    public class GameManager : MonoBehaviour
     {
-        
-    }
+        public GameObject GameOverCanvas;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        // Start is called before the first frame update
+        private void Start()
+        {
+            GameOverCanvas.SetActive(false);
+            Time.timeScale = 1;
+        }
+
+        public void GameOver()
+        {
+            GameOverCanvas.SetActive(true);
+            Time.timeScale = 0;
+        }
+
+        // Update is called once per frame
+        private void Update()
+        {
+        }
+
+        public void Replay()
+        {
+            SceneManager.LoadScene(0);
+        }
     }
 }

@@ -5,6 +5,7 @@ namespace Assets.Scripts
 {
     public class FlyLittleBird : MonoBehaviour
     {
+        public GameManager GameManager;
         public float Velocity = 1;
         private Rigidbody2D _rb;
 
@@ -21,6 +22,11 @@ namespace Assets.Scripts
             {
                 _rb.velocity = Vector2.up * Velocity;
             }
+        }
+
+        private void OnCollisionEnter2D(Collision2D collision)
+        {
+            GameManager.GameOver();
         }
     }
 }
